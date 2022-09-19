@@ -1,0 +1,12 @@
+---
+- name: "Install requirements"
+  ansible.builtin.package:
+    name: unzip
+
+- name: "Install Packer"
+  ansible.builtin.unarchive:
+    src: https://releases.hashicorp.com/packer/{{ packer_version }}/packer_{{ packer_version }}_linux_{{ packer_arch }}.zip
+    dest: "{{ packer_install_path }}"
+    creates: "{{ packer_install_path }}/packer"
+    remote_src: true
+    mode: 0755
