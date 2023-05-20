@@ -1,7 +1,5 @@
 # ansible-apps_packer
 
-## Description
-
 [![Galaxy Role](https://img.shields.io/badge/galaxy-apps_packer-purple?style=flat)](https://galaxy.ansible.com/lotusnoir/apps_packer)
 [![Version](https://img.shields.io/github/release/lotusnoir/ansible-apps_packer.svg)](https://github.com/lotusnoir/ansible-apps_packer/releases/latest)
 [![GitHub repo size](https://img.shields.io/github/repo-size/lotusnoir/ansible-apps_packer?color=orange&style=flat)](https://galaxy.ansible.com/lotusnoir/apps_packer)
@@ -9,8 +7,9 @@
 [![Ansible Quality Score](https://img.shields.io/ansible/quality/)](https://galaxy.ansible.com/lotusnoir/apps_packer)
 [![License](https://img.shields.io/badge/license-Apache--2.0-brightgreen?style=flat)](https://opensource.org/licenses/Apache-2.0)
 
-Install hashicorp packer in order to create templates
+## Description
 
+Install hashicorp packer in order to create templates
 ## Requirements
 
 none
@@ -34,3 +33,6 @@ See [variables](/defaults/main.yml) for more details.
 
 This project is licensed under Apache License. See [LICENSE](/LICENSE) for more details.
 
+## Author Information
+
+- [Philippe LEAL](https://github.com/lotusnoir)
