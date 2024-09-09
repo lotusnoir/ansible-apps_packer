@@ -2,6 +2,10 @@
 - name: "Install requirements"
   ansible.builtin.package:
     name: unzip
+  register: pkg_result
+  retries: 12
+  delay: 10
+  until: pkg_result is success
 
 - name: "Install Packer"
   ansible.builtin.unarchive:
@@ -9,4 +13,4 @@
     dest: "{{ packer_install_path }}"
     creates: "{{ packer_install_path }}/packer"
     remote_src: true
-    mode: 0755
+    mode: '0755'
