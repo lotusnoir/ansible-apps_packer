@@ -2,10 +2,10 @@
 - name: "Install requirements"
   ansible.builtin.package:
     name: unzip
-  register: pkg_result
+  register: __pkg_result
   retries: 12
   delay: 10
-  until: pkg_result is success
+  until: __pkg_result is success
 
 - name: "Install Packer"
   ansible.builtin.unarchive:
